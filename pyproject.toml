@@ -1,0 +1,18 @@
+[project]
+name = "portable-names"
+version = "0.1.0"
+description = "Report the file names in a project that break a checkout on Windows or macOS."
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "Apache-2.0"}
+keywords = ["portability", "windows", "macos", "filenames", "ci"]
+
+[project.scripts]
+portable-names = "portable_names:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = ["portable_names"]
